@@ -1,0 +1,29 @@
+:host {
+    border: 2px solid #353434;
+    /* display: block; */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 5px; */
+}
+
+nav {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+nav a {
+    color: black;
+    padding: 10px;
+    text-decoration-line: none;
+    font-size: 17px;
+    margin: 0 15px 0;
+    border-radius: 45px;
+}
+
+nav a.active {
+    font-weight: 700;
+    background: #666060;
+}

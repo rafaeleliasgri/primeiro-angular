@@ -1,0 +1,21 @@
+<!-- Exemplo de interpolation Binding -->
+<h2 [class.titulo]="estilizarTitulo">{{message}}</h2>
+
+<!-- Exemplo de property Binfing -->
+<img [src]="imagePath" [style.width.px]="imageWidth">
+
+<!-- Exemplo 2 de property Binfing e de attribute binding -->
+<button [attr.aria-label]="ariaLabel" [disabled]="isDisabled" [style]="botaoFechar">x</button>
+
+<!-- Exemplo de Event Binding -->
+<button (click)="enableCloseButton()" [class]="botaoClass">Habilitar o botão Fechar</button>
+
+<button (click)="aplicarEstiloTitulo()" [class]="botaoClass">Aplicar Estilo</button>
+
+<!-- Exemplo de two way binding -->
+<label for="nome">Nome</label>
+<input type="text" name="" id="nome" [(ngModel)]="nomeCliente">
+
+<span>O nome digitado é: </span><span id="nomeDigitado">{{nomeCliente}}</span>
+
+

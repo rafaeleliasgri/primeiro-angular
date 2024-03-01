@@ -1,0 +1,19 @@
+<!-- Exemplo de interpolation (tem as chaves duplas) e class bind -->
+<h2 [class.titulo]="estilizarTitulo">{{message}}</h2>
+
+<!-- Exemplo de attribute e property bind -->
+<img [src]="imagePath" width="400">
+
+<button [attr.aria-label]="ariaLabel" [disabled]="isDisabled">x</button>
+
+<!-- Exemplo de event biding -->
+<button (click)="enableCloseButton()">Habilitar o botão Fechar</button>
+
+<button (click)="aplicarEstiloTitulo()">Aplicar estilo no título</button>
+
+<!-- Exemplo de two way bind -->
+<label for="nome">Nome</label>
+
+<input type="text" id="nome" [(ngModel)]="nomeCliente">
+
+<span>O nome digitado é:</span> <span id="nomeDigitado">{{nomeCliente}}</span>
