@@ -1,0 +1,21 @@
+<h2>Exemplo de Dietivas</h2>
+
+<p [ngStyle]="estiloParagrafo">Este é um Parágrafo</p>
+
+<button [ngClass]="aplicarEstiloVerde ? classeBotaoVerde : classeBotaoVermelho" (click)="aplicarEstilos()">Trocar
+    Estilos</button>
+
+<label *ngIf="camposVisiveis" for="nome">Digite seu Nome:</label>
+<input *ngIf="camposVisiveis" type="text" name="" id="nome" [(ngModel)]="name">
+
+<label *ngIf="camposVisiveis" for="nomeMaisuculo">Digite seu nome (Maiúsculas):</label>
+<input *ngIf="camposVisiveis" type="text" name="" id="nomeMaisuculo" [(ngModel)]="name"
+    (ngModelChange)="alterarParaMaiusculo($event)">
+
+<h3>Lista de Clientes</h3>
+
+<div *ngFor="let cliente of clientes; let i=index; let impar=odd;" [class.background-cinza]="impar">
+    {{i+1}} {{cliente.nome}}
+</div>
+
+<button (click)="esconderCampos()">Esconder Campos</button>
