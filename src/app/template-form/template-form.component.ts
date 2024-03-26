@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './template-form.component.html',
   styleUrl: './template-form.component.css'
 })
+
 export class TemplateFormComponent {
 
   model = new Customer(null, '', '');
@@ -21,7 +22,8 @@ export class TemplateFormComponent {
   onSubmit() {
     this.submitted = true;
 
-    console.warn(this.model);
+    console.log(this.model);
+    alert("Dados enviados com sucesso!");
   }
 
 

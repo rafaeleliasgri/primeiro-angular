@@ -9,6 +9,7 @@ import { FormControl, FormGroup, FormBuilder, ReactiveFormsModule, Validators, F
   templateUrl: './reactive-form.component.html',
   styleUrl: './reactive-form.component.css'
 })
+
 export class ReactiveFormComponent {
 
   constructor(private formBuilder: FormBuilder) {
@@ -63,9 +64,8 @@ export class ReactiveFormComponent {
   }
 
   submitForm() {
-    console.warn(this.profileForm.value);
+    console.log(this.profileForm.value);
+    alert("Formulário enviado com sucesso!");
   }
-
-
 
 }

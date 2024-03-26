@@ -18,6 +18,7 @@ export const routes: Routes = [
         {path: 'filho-a', title: 'Filho A', component: FilhoAComponent},
         {path: 'filho-b', title: 'Filho B', component: FilhoBComponent}
     ]},
+    {path: 'filho-a', title: 'Filho A', component: FilhoAComponent},
     {path: 'data-binding', title: 'Data Binding', component: DataBindingComponent, canActivate: [guardiaoGuard]},
     {path: 'directives', title: 'Directives', component: DirectivesComponent},
     {path: 'customers', title: 'Customers', component: CustomerListComponent},

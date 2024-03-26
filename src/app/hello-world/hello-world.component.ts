@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
     styleUrl: './hello-world.component.css',
     imports: [FilhoAComponent, FilhoBComponent, RouterModule, CommonModule]
 })
+
 export class HelloWorldComponent {
 
     textoVaiProFilho: string = '';

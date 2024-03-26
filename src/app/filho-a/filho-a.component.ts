@@ -19,5 +19,4 @@ export class FilhoAComponent {
     this.textoPreenchido.emit(value);
   }
 
-
 }

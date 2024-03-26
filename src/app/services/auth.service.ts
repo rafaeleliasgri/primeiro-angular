@@ -3,11 +3,12 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthService {
 
   constructor() { }
 
-  update(acesso:boolean) {
+  update(acesso: boolean) {
     sessionStorage.setItem('podeAcessar', acesso.toString());
   }
 
